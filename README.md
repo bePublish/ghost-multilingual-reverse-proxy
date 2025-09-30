@@ -125,3 +125,4 @@ Ghost, Nginx, Reverse Proxy, Docker, Railway, Multilingual, Multi-instance, CMS,
 
 - Github: [cuongthachHQ](https://github.com/cuongthachHQ)
 - Railway template created by: [http://bepublish.com](http://bepublish.com)
+- Want to own multilingual theme for Ghost? [Check TanaFlows theme!](http://bepublish.com/tanaflows/)
