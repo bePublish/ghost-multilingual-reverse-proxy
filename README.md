@@ -4,7 +4,7 @@
 
 > A Railway-ready template to host multiple Ghost blogs under a single domain with subdirectory routing.
 
-This project is a Dockerized Nginx reverse proxy designed to route traffic to multiple [Ghost CMS](https://ghost.org?via=cuong76) instances based on the URL path. It is optimized for deployment on [Railway](https://railway.app?referralCode=cuongthach).
+This project is a Dockerized Nginx reverse proxy designed to route traffic to multiple [Ghost CMS](https://ghost.org?via=cuong76) instances based on the URL path. It is optimized for deployment on [Railway](https://railway.com/deploy/ghost-multilingual-reverse-proxy?referralCode=cuongthach&utm_medium=integration&utm_source=template&utm_campaign=generic).
 
 ## How It Works
 
@@ -46,7 +46,7 @@ To configure the reverse proxy, you will need to set the following environment v
 
 ## Deployment to Railway
 
-[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/LKyils?referralCode=cuongthach&utm_medium=integration&utm_source=template&utm_campaign=generic)
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/ghost-multilingual-reverse-proxy?referralCode=cuongthach&utm_medium=integration&utm_source=template&utm_campaign=generic)
 
 ### Step 1: Deploy the Template
 
