@@ -109,7 +109,7 @@ To run this project locally, you can use the provided Dockerfile.
 
 - **Multilingual Blogs:** Serve different language versions of your Ghost blog from subdirectories (e.g., `/en/`, `/fr/`, `/es/`).
 - **Multiple Brands or Publications:** Manage several distinct publications or brands under a single parent domain.
-- **Documentation & Blog:** Host your main blog and a documentation site (e.g., GitBook, Docusaurus) from the same domain (e.g., `your-domain.com/docs`).
+- **Documentation & Blog:** Host your main blog and a documentation site (Docs Ghost Themes like [doks theme](https://spiritix.co/?aff=qqRyR)) from the same domain (e.g., `your-domain.com/docs/`).
 
 ## Further Reading
 
