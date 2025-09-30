@@ -55,7 +55,7 @@ To configure the reverse proxy, you will need to set the following environment v
 
 ### Step 2: Configure Environment Variables
 
-1.  In your new Railway project, navigate to the reverse proxy service settings and go to the **Variables** tab.
+1.  In your new Railway project, navigate to the `ghost-multilingual-reverse-proxy` service settings and go to the **Variables** tab.
 2.  Add the required environment variables based on the "Environment Variables" section above.
     *   `SERVER_NAME`: Your custom domain (e.g., `your-domain.com`).
     *   `GHOST_ROOT_URL`: The internal URL of your main Ghost instance on Railway (e.g., `http://ghost-en.railway.internal:2368`).
@@ -72,7 +72,11 @@ This is a critical step. For the reverse proxy to work correctly, you must updat
 4.  In the **Variables** tab, set the `url` variable to your full public domain including the subdirectory path.
     *   Example: `https://your-domain.com/fr/`
 
-Once these variables are set, your reverse proxy will correctly route traffic to the appropriate Ghost instance.
+### Step 4: Expose to the Web
+
+1.  In the `ghost-multilingual-reverse-proxy` service settings on Railway, go to the **Settings** tab.
+2.  Under the "Networking" section, click on **Generate Domain** to get a free `*.up.railway.app` subdomain, or click **+ Add Domain** to link your own custom domain.
+3.  Ensure the domain points to the service port `8080`.
 
 ## Local Development
 
