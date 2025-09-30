@@ -37,7 +37,7 @@ To configure the reverse proxy, you will need to set the following environment v
 | Variable | Description | Example | Required |
 |---|---|---|---|
 | `SERVER_NAME` | The domain name for the Nginx server. | `your-domain.com` | **Yes** |
-| `GHOST_ROOT_URL` | The internal URL of the main Ghost instance (for the `/` path). | `http://ghost-en.internal:2368` | **Yes** |
+| `GHOST_ROOT_URL` | The internal URL of the main Ghost instance (for the `/` path). | `http://ghost.internal:2368` | **Yes** |
 | `GHOST_INSTANCES` | A comma-separated list of additional Ghost instances. Each instance is a `path:url` pair. | `/fr:http://ghost-fr:2368` | No |
 | `PORT` | The port for Nginx to listen on. Defaults to `8080`. | `8080` | No |
 
@@ -64,7 +64,7 @@ To configure the reverse proxy, you will need to set the following environment v
 1.  In your new Railway project, navigate to the `ghost-multilingual-reverse-proxy` service settings and go to the **Variables** tab.
 2.  Add the required environment variables based on the "Environment Variables" section above.
     *   `SERVER_NAME`: Your custom domain (e.g., `your-domain.com`).
-    *   `GHOST_ROOT_URL`: The internal URL of your main Ghost instance on Railway (e.g., `http://ghost-en.railway.internal:2368`).
+    *   `GHOST_ROOT_URL`: The internal URL of your main Ghost instance on Railway (e.g., `http://ghost.railway.internal:2368`).
     *   `GHOST_INSTANCES`: The path and internal URL for your other Ghost instances (e.g., `/fr:http://ghost-fr.railway.internal:2368`).
 
 ### Step 3: Configure Ghost Instances
