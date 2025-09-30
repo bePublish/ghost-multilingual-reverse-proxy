@@ -48,9 +48,31 @@ To configure the reverse proxy, you will need to set the following environment v
 
 [![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/LKyils?referralCode=cuongthach&utm_medium=integration&utm_source=template&utm_campaign=generic)
 
+### Step 1: Deploy the Template
+
 1.  Click the 'Deploy on Railway' button above.
-2.  Follow the instructions on Railway to deploy the template.
-3.  Once the deployment is complete, navigate to the "Variables" tab in your new Railway project and add the required environment variables.
+2.  Follow the instructions to create the repository and deploy the service.
+
+### Step 2: Configure Environment Variables
+
+1.  In your new Railway project, navigate to the reverse proxy service settings and go to the **Variables** tab.
+2.  Add the required environment variables based on the "Environment Variables" section above.
+    *   `SERVER_NAME`: Your custom domain (e.g., `your-domain.com`).
+    *   `GHOST_ROOT_URL`: The internal URL of your main Ghost instance on Railway (e.g., `http://ghost-en.railway.internal:2368`).
+    *   `GHOST_INSTANCES`: The path and internal URL for your other Ghost instances (e.g., `/fr:http://ghost-fr.railway.internal:2368`).
+
+### Step 3: Configure Ghost Instances
+
+This is a critical step. For the reverse proxy to work correctly, you must update the public URL in each of your Ghost instances.
+
+1.  Go to the settings for your **main** Ghost instance on Railway.
+2.  In the **Variables** tab, set the `url` variable to your full public domain.
+    *   Example: `https://your-domain.com`
+3.  Go to the settings for your **additional** Ghost instance (e.g., the French version).
+4.  In the **Variables** tab, set the `url` variable to your full public domain including the subdirectory path.
+    *   Example: `https://your-domain.com/fr/`
+
+Once these variables are set, your reverse proxy will correctly route traffic to the appropriate Ghost instance.
 
 ## Local Development
 
@@ -89,5 +111,5 @@ Ghost, Nginx, Reverse Proxy, Docker, Railway, Multilingual, Multi-instance, CMS,
 
 ## Created by
 
-- Github: [cuongtqtran](https://github.com/cuongthachHQ)
+- Github: [cuongthachHQ](https://github.com/cuongthachHQ)
 - Railway template created by: [http://bepublish.com](http://bepublish.com)
