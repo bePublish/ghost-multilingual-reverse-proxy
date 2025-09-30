@@ -59,6 +59,8 @@ To configure the reverse proxy, you will need to set the following environment v
 
 ![Configure Environment Variables](assets/var.png)
 
+![Copy Internal URLs](assets/internal.png)
+
 1.  In your new Railway project, navigate to the `ghost-multilingual-reverse-proxy` service settings and go to the **Variables** tab.
 2.  Add the required environment variables based on the "Environment Variables" section above.
     *   `SERVER_NAME`: Your custom domain (e.g., `your-domain.com`).
