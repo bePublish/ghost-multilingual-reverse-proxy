@@ -58,7 +58,7 @@ To run this project locally, you can use the provided Dockerfile.
 
 1.  **Build the Docker image:**
     ```bash
-    docker build -t ghost-reverse-proxy .
+    docker build -t ghost-multilingual-reverse-proxy .
     ```
 
 2.  **Run the Docker container:**
@@ -68,7 +68,7 @@ To run this project locally, you can use the provided Dockerfile.
         -e GHOST_ROOT_URL=http://localhost:2368 \
         -e GHOST_INSTANCES="/fr:http://localhost:2369" \
         -e PORT=8080 \
-        ghost-reverse-proxy
+        ghost-multilingual-reverse-proxy
     ```
 
 ## Use Cases
