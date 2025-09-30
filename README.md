@@ -50,6 +50,8 @@ To configure the reverse proxy, you will need to set the following environment v
 
 ### Step 1: Deploy the Template
 
+![Ghost Multilingual Reverse Proxy](assets/deploy-ghost.gif)
+
 1.  Click the 'Deploy on Railway' button above.
 2.  Follow the instructions to create the repository and deploy the service.
 
