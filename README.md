@@ -89,5 +89,5 @@ Ghost, Nginx, Reverse Proxy, Docker, Railway, Multilingual, Multi-instance, CMS,
 
 ## Created by
 
-- Github: [cuongtqtran](https://github.com/cuongtqtran)
+- Github: [cuongtqtran](https://github.com/cuongthachHQ)
 - Railway template created by: [http://bepublish.com](http://bepublish.com)
