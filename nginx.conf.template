@@ -3,6 +3,7 @@ worker_processes auto;
 events { worker_connections 1024; }
 
 http {
+    client_max_body_size 500m;
     sendfile on;
 
     map $status $header_content_type_options {
